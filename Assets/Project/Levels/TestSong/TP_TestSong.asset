@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690e1e796b8c60f43a0b637e8355d6a5, type: 3}
+  m_Name: TP_TestSong
+  m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 6059991626285145963, guid: 8cc6c537d373cc345845062f3ea01c4a, type: 3}
+  tabCount: 1
+  laneCount: 4
+  preSpawnSubBeatInterval: 16
+  tiles:
+  - laneIndex: 0
+    startTimeInSubBeat: 20
+    durationInSubBeat: 0
+  - laneIndex: 1
+    startTimeInSubBeat: 24
+    durationInSubBeat: 0
+  - laneIndex: 3
+    startTimeInSubBeat: 24
+    durationInSubBeat: 0
+  - laneIndex: 3
+    startTimeInSubBeat: 32
+    durationInSubBeat: 0
+  - laneIndex: 0
+    startTimeInSubBeat: 36
+    durationInSubBeat: 0
+  - laneIndex: 1
+    startTimeInSubBeat: 38
+    durationInSubBeat: 0
+  - laneIndex: 2
+    startTimeInSubBeat: 40
+    durationInSubBeat: 0
+  - laneIndex: 3
+    startTimeInSubBeat: 42
+    durationInSubBeat: 0
+  - laneIndex: 2
+    startTimeInSubBeat: 44
+    durationInSubBeat: 0
+  - laneIndex: 1
+    startTimeInSubBeat: 46
+    durationInSubBeat: 0
+  - laneIndex: 0
+    startTimeInSubBeat: 48
+    durationInSubBeat: 0
+  - laneIndex: 0
+    startTimeInSubBeat: 52
+    durationInSubBeat: 0
+  - laneIndex: 2
+    startTimeInSubBeat: 54
+    durationInSubBeat: 0
+  - laneIndex: 1
+    startTimeInSubBeat: 56
+    durationInSubBeat: 0
+  - laneIndex: 3
+    startTimeInSubBeat: 58
+    durationInSubBeat: 0
