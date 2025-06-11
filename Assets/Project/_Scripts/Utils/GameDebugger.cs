@@ -6,10 +6,14 @@ public class GameDebugger : MonoBehaviour
 { 
     void Update()
     {
+        if (GameMode.Instance == null)
+        { 
+            return;
+        }
+        
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("Reloading Scene...");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            GameMode.Instance.RestartGame();
         }
     }
 }

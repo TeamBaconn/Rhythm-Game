@@ -126,4 +126,9 @@ public class GameMode : MonoBehaviour
         
         gameResultUI.SetResult(isWin, _score); 
     }
+
+    public void RestartGame()
+    { 
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
 }

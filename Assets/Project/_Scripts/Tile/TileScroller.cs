@@ -54,11 +54,11 @@ public class TileScroller : MonoBehaviour
         _initialRect = scrollImage.uvRect;
         
         // Add the scroll offset
-        float offsetRatio = 1f - MathHelper.SafeDivide(profile.offset, profile.beatPerBar);
+        float offsetRatio = 1f - MathHelper.SafeDivide(profile.offset, profile.beatPerBar * tileMapping.tabCount);
         AddScrollOffset(-offsetRatio * scrollDirection.x, -offsetRatio * scrollDirection.y);
 
         // Initialize scroll speed
-        float secondsPerBar = ((float) profile.beatPerBar / profile.bpm) * 60f;
+        float secondsPerBar = ((float) (profile.beatPerBar * tileMapping.tabCount) / profile.bpm) * 60f;
         _scrollSpeed = 1f / secondsPerBar;
     }
     
@@ -91,7 +91,7 @@ public class TileScroller : MonoBehaviour
         
         var profile = trackInstance.GetTrackProfile();
         
-        float beatPerBar = profile.beatPerBar;
+        float beatPerBar = profile.beatPerBar * trackInstance.GetTileMapping().tabCount;
         float barRatio = (wholeBeat % beatPerBar) / beatPerBar;
 
         float currentX = Mathf.Repeat(scrollImage.uvRect.x - _initialRect.x, 1f);
