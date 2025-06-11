@@ -1,5 +1,5 @@
 ## Demo
-![Demo]("/Demo.mp4")
+[Demo](/Demo.mp4)
 
 ## How to Run the Project
 
