@@ -1,17 +1,6 @@
 ## Demo Video
 [Demo Video](/Demo.mp4)
 
-## How to Run the Project
-
-1. Open the project using **Unity 2021.3.xxx LTS**.
-2. Open the `GameScene` and press **Play**.
-3. The current song is configured in:  
-   `Assets/Project/Levels/TestSong`
-
-> 💡 To switch or add new songs, create a new `TrackProfile` and update the `Conductor` script to reference it.
-
----
-
 ## Core Gameplay Features
 
 - **Rhythmic Tile Spawning**  
@@ -79,9 +68,18 @@
 
 --- 
 
-## Assets & Attribution
+## How to Run the Project
 
-All code, visual elements, and feedback systems were created by me.  
+1. Open the project using **Unity 2021.3.xxx LTS**.
+2. Open the `GameScene` and press **Play**.
+3. The current song is configured in:  
+   `Assets/Project/Levels/TestSong`
+
+> 💡 To switch or add new songs, create a new `TrackProfile` and update the `Conductor` script to reference it.
+
+---
+
+## Assets & Attribution
 **No third-party assets or plugins were used.**
 
 ---
