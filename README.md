@@ -15,7 +15,7 @@
 ## Core Gameplay Features
 
 - **Rhythmic Tile Spawning**  
-  Tiles are spawned based on a `TileMapping` configuration that defines note timing, lane count, and total notes.
+  Tiles are spawned based on a `TileMapping` configuration that defines note timing, lane count, and note mapping.
 
 - **Scrolling & Synchronization**  
   Tiles scroll downward via a `Scroller` script. Scroll speed is based on the track’s BPM and is corrected every beat for synchronization.
@@ -49,6 +49,9 @@
 ### Input Detection
 - On tap, the game checks tile proximity to the hit line.
 - Hit result is determined based on distance at tap time.
+
+### Dynamic resolution
+- `Scroller` and tiles works on different screen resolution.
 
 ---
 
